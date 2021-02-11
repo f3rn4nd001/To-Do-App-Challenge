@@ -1,0 +1,407 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+color: #151010;;
+
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:195px;
+overflow:visible;
+height: 100%;
+}
+.main-menu2:hover,nav.main-menu2.expanded {
+        width:100%;
+        height: 100%;
+        overflow:visible;
+        }
+.main-menu {
+        background: #b6b5b5;
+        border-right:1px solid #e5e5e5;
+        position:absolute;
+        top:0;
+        bottom:0;
+        height:100%;
+        left:0;
+        width:60px;
+        overflow:hidden;
+        -webkit-transition:width .05s linear;
+        transition:width .05s linear;
+        z-index:1000;
+        position:fixed;
+}
+
+
+.main-menu2 {
+  top: 0px;
+  bottom: 0px;
+  height: 804%;
+  left: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: width .05s linear;
+  z-index: 1000;
+  position: absolute;
+        }
+        
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:unset;
+}
+
+
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:rgb(175, 168, 168);
+ font-family: arial;
+font-size: 14.2px;
+text-decoration:none;
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:69%;
+  font-family: 'Titillium Web', sans-serif;
+   color:#151010;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:20px;
+}
+        
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:rgb(82, 76, 76);
+background-color:#dac3a5;
+}
+.main-menu2 li:hover>a,nav.main-menu2 li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#dac3a5;
+}
+
+.area2 {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.menu {
+  -webkit-filter: url("#goo");
+          filter: url("#goo");
+          height: 90%;
+}
+
+
+
+.menu-item, .menu-open-button {
+  background: #212121;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform ease-out 200ms;
+  transition: -webkit-transform ease-out 200ms;
+  transition: transform ease-out 200ms;
+  transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.hamburger-1 {
+  -webkit-transform: translate3d(0, -8px, 0);
+          transform: translate3d(0, -8px, 0);
+}
+
+.hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.hamburger-3 {
+  -webkit-transform: translate3d(0, 8px, 0);
+          transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked + .menu-open-button .hamburger-1 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+          transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.menu-open:checked + .menu-open-button .hamburger-2 {
+  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+          transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.menu-open:checked + .menu-open-button .hamburger-3 {
+  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+          transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+
+  left: 85%;
+  top: 66%;
+  margin-left: -190px;
+  padding-top: 20px;
+  padding-left: 190px;
+  width: 380px;
+  height: 250px;
+  box-sizing: border-box;
+  font-size: 23px;
+  text-align: left;
+  position:fixed;
+	bottom:40px;
+}
+
+.menu-item:hover {
+  background: rgb(49, 119, 211);
+  color: #c7a900;
+ 
+}
+.menu-item:nth-child(3) {
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(4) {
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(5) {
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(6) {
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(7) {
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(8) {
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+.menu-item:nth-child(9) {
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+          transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+.menu-open-button:hover {
+  -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+          transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+          transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+          transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  -webkit-transition-duration: 180ms;
+          transition-duration: 180ms;
+  -webkit-transform: translate3d(0.08361px, -104.99997px, 0);
+          transform: translate3d(0.08361px, -104.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  -webkit-transition-duration: 280ms;
+          transition-duration: 280ms;
+  -webkit-transform: translate3d(90.9466px, -52.47586px, 0);
+          transform: translate3d(90.9466px, -52.47586px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  -webkit-transition-duration: 380ms;
+          transition-duration: 380ms;
+  -webkit-transform: translate3d(90.9466px, 52.47586px, 0);
+          transform: translate3d(90.9466px, 52.47586px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  -webkit-transition-duration: 480ms;
+          transition-duration: 480ms;
+  -webkit-transform: translate3d(0.08361px, 104.99997px, 0);
+          transform: translate3d(0.08361px, 104.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  -webkit-transition-duration: 580ms;
+          transition-duration: 580ms;
+  -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
+          transform: translate3d(-90.86291px, 52.62064px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(8) {
+  -webkit-transition-duration: 680ms;
+          transition-duration: 680ms;
+  -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
+          transform: translate3d(-91.03006px, -52.33095px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(9) {
+  -webkit-transition-duration: 780ms;
+          transition-duration: 780ms;
+  -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
+          transform: translate3d(-0.25084px, -104.9997px, 0);
+}
+#mount-point {
+        padding: 60px;
+        max-width: 800px;
+        margin: auto;
+      }
+      #mount-point input {
+        line-height: 2;
+        font-size: 18px;
+        height: auto;
+        padding-left: 20px;
+      }
+      #mount-point ul {
+        margin: 0;
+      }
+      #mount-point ul li {
+        list-style: none;
+        border: 1px solid #ccc;
+        margin-top: -1px;
+        line-height: 2;
+        padding: 5px 20px;
+        background: white;
+      }
+
+
+      .uno,
+.dos {
+  background-attachment: fixed;
+  line-height: 100vh;
+  text-align: center;
+  background-size: cover;
+}
+
+.uno {
+  background-image: url('https://cdn.wallpapersafari.com/79/73/TvuM20.jpg');
+  
+}
+
+.dos {
+  background-image: url('http://www.bravotv.com/sites/nbcubravotv/files/field_blog_image/2016/11/jet-set-bachelorette-parties-nyc.jpg');
+}
